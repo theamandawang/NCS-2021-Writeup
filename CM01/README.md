@@ -6,5 +6,6 @@
 
 ![frame.png](https://github.com/theamandawang/NCS-2021-Writeup/blob/main/CM01/frame.png)
 
-Scanning this QR code with my phone camera, I got:
+Scanning this QR code with my phone camera, I got the message:
+> Hey, I've put the flag into the other file using the same trick we always use. You know what to do. :)
 
