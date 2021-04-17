@@ -1,3 +1,5 @@
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
+# CM01
+#### 250pts
+## Briefing
+## Download the file and find a way to get the flag.
+
