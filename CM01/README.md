@@ -24,5 +24,68 @@ These text files are [cm 01 frame.txt](https://github.com/theamandawang/NCS-2021
 
 Now that we have these QR codes represented in text form, we can XOR each pixel.
 
-I ended up using the numpy library to work with matrices so the new XORed text file would be easier to create.
+I ended up using the numpy library to work with matrices so the new XORed text file would be easier to create.``
+import numpy as np
+```python
+f = open('cm 01 frame.txt', 'r')
+f2 = open('cm01 code qr.txt', 'r')
+f3 = open('xored.txt', 'w+')
 
+i = 0
+for x in f:
+    for y in x:
+        i += 1
+    print(i)
+    break
+##file length = 301 by 301 square
+
+
+array = np.zeros((301, 301))
+
+
+code = np.zeros((301,301))
+count = 0
+count2 = 0
+for line in f2:
+    count2 = 0
+    for x in line:
+        if(x == '0'):
+            code[count][count2] = 0
+        else:
+            code[count][count2]  = 1
+        count2 += 1
+    count += 1
+print(code) 
+
+frame = np.zeros((301,301))
+count = 0
+count2 = 0
+for line in f:
+    count2 = 0
+    for x in line:
+        if(x == '0'):
+            frame[count][count2] = 0
+        else:
+            frame[count][count2]  = 1
+        count2 += 1
+    count += 1
+print(frame) 
+
+for x in range(301):
+    for y in range(301):
+        if code[x][y] != frame[x][y]:
+            array[x][y] = 1
+
+for x in range(301):
+    f3.write(str(array[x]) + '\n')
+```
+
+After creating a new file with [xored.txt](https://github.com/theamandawang/NCS-2021-Writeup/blob/main/CM01/xored.txt), we can put that back into [Dcode.fr](https://www.dcode.fr/binary-image) to create a QR code out of the binary data.
+
+Finally, we end up with the [xored QR code](https://github.com/theamandawang/NCS-2021-Writeup/blob/main/CM01/xored.png)
+
+Scan it:
+![xored code](https://github.com/theamandawang/NCS-2021-Writeup/blob/main/CM01/xored.png)
+
+And we get:
+> FLAG: A_Code_For_A_Code
