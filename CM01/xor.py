@@ -3,9 +3,19 @@ import numpy as np
 f = open('cm 01 frame.txt', 'r')
 f2 = open('cm01 code qr.txt', 'r')
 f3 = open('xored.txt', 'w+')
+
+i = 0
+for x in f:
+    for y in x:
+        i += 1
+    print(i)
+    break
+##file length = 301 by 301 square
+
+
 array = np.zeros((301, 301))
 
-# each qr code is 301 by 301 using dcode.fr
+
 code = np.zeros((301,301))
 count = 0
 count2 = 0
