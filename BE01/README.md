@@ -13,7 +13,7 @@ The first couple of lines are as follows:
 > <<
 > /Filter /FlateDecode
 > /Length 550559
-> >>
+> \>\>
 > stream
 > PK
 >      °}ZQ r@azf zf    egg.zipPK
