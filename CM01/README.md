@@ -84,7 +84,9 @@ After creating a new file with [xored.txt](https://github.com/theamandawang/NCS-
 
 Finally, we end up with the [xored QR code](https://github.com/theamandawang/NCS-2021-Writeup/blob/main/CM01/xored.png)
 
+
 Scan it:
+
 ![xored code](https://github.com/theamandawang/NCS-2021-Writeup/blob/main/CM01/xored.png)
 
 And we get:
