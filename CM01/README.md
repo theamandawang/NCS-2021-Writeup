@@ -9,6 +9,7 @@ Scanning the QR code frame.png with my phone camera, I got the message:
 > Hey, I've put the flag into the other file using the same trick we always use. You know what to do. :)
 
 Now, looking at the other "QR code" they give us, code.png, we can scan it and it does nothing.
+![code.png](https://github.com/theamandawang/NCS-2021-Writeup/blob/main/CM01/code.png)
 
 Something interesting about QR codes is that you can perceive the black and white pixels as 0s or 1s. Essentially QR codes are "binary" images.
 
