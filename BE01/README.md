@@ -23,4 +23,7 @@ The first couple of lines are as follows:
 
 Looking at this, it seems like there are hidden files within [chicken.pdf](https://github.com/theamandawang/NCS-2021-Writeup/blob/main/BE01/chicken.pdf). The perfect tool for this is [binwalk](https://tools.kali.org/forensics/binwalk#:~:text=Binwalk%20is%20a%20tool%20for,for%20the%20Unix%20file%20utility.) on Linux. 
 
-I called binwalk -Me chicken.pdf.
+I used
+```
+binwalk -Me chicken.pdf
+```
