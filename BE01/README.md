@@ -27,3 +27,9 @@ I used
 ```
 binwalk -Me chicken.pdf
 ```
+After finding the hidden files, I traversed the directory and found the file *egg.pdf*
+
+Opening it, you will see the flag.
+
+>Flag:
+>wh1ch_came_f1rst?
